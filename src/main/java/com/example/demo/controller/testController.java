@@ -12,4 +12,11 @@ public class testController {
     model.addAttribute("tag","Spring Boot + Thymeleaf入門");
     return "/index";
   }
+
+  @RequestMapping("/input")
+  public String input(String input, Model model) {
+    model.addAttribute("tag", "Spring Boot + Thymeleaf入門");
+    model.addAttribute("input", input);
+    return "/index";
+  }
 }
